@@ -1,4 +1,4 @@
-#Text Summarization Tool ✂️🧠
+Text Summarization Tool ✂️🧠
 
 This project is a smart text summarization application that uses advanced natural language processing techniques to condense long documents into concise summaries. It helps users quickly grasp the key points of any lengthy text, saving time and improving comprehension.
 
