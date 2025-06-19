@@ -1,38 +1,87 @@
-# Text Summarization Tool ✂️🧠
+# 🧠 Text Summarization Tool
 
-This project is a smart text summarization application that uses advanced natural language processing techniques to condense long documents into concise summaries. It helps users quickly grasp the key points of any lengthy text, saving time and improving comprehension.
+This is a simple Python-based **text summarization tool** that uses **Natural Language Processing (NLP)** techniques to shorten lengthy articles while preserving their key meaning. It was developed as part of **CODTECH Internship Task-1**.
 
-🔍 **Key Features:**
+---
 
-* Summarizes long text inputs using the LexRank algorithm for extractive summarization
-* Clean and interactive web UI for easy text input and summary display
-* Built with Python and Flask for quick deployment and lightweight backend
-* Stylish and responsive frontend using HTML, CSS, and JavaScript
-* Supports UTF-8 encoded text and multiple sentences summary output
+## 📌 Overview
 
-⚙️ **How It Works:**
+The tool takes long paragraphs or articles as input and returns a concise summary using extractive text summarization methods. It’s a command-line Python script — easy to use, lightweight, and great for educational or demo purposes.
 
-1. User inputs or uploads a long text document via the web interface
-2. Text is processed by the Sumy library’s LexRank summarizer
-3. A summary of specified sentence length is generated
-4. The summary is displayed instantly on the UI
+---
 
-🚀 **Technologies Used:**
+## 🚀 Features
 
-* Python (Flask) for backend server and routing
-* Sumy library with LexRank algorithm for text summarization
-* NLTK for natural language tokenization
-* HTML, CSS, JavaScript for frontend and styling
+- ✂️ Summarizes large bodies of text
+- 🧠 Uses NLP techniques for extractive summarization
+- 📄 Reads input from a `.txt` file
+- 💬 Outputs original and summarized content in the terminal
+- ⚙️ Minimal setup required
 
-🎯 **Use Cases:**
+---
 
-* Quick summarization of articles, reports, or research papers
-* Educational aid to understand large volumes of text
-* Productivity tool for students, researchers, and professionals
+## 🛠️ Tech Stack
 
-🔮 **Future Enhancements:**
+- **Language**: Python
+- **Library**: `gensim==3.8.3` (for summarization) or alternative like `sumy`
+- **Input Format**: Plain text (`.txt`)
+- **Output**: Console-based display of original and summarized text
 
-* Add support for uploading files (PDF, DOCX) for summarization
-* Include multiple summarization algorithms (TextRank, LSA) for comparison
-* Improve UI/UX with real-time summary preview and customization options
-* Deploy as a REST API for integration into other applications
+---
+
+## 📁 Project Structure
+
+```
+
+text\_summarizer/
+├── summarizer.py          # Main script
+├── input.txt              # Sample input article
+└── requirements.txt       # Dependency list
+
+````
+
+---
+
+## 🧪 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/text_summarizer.git
+   cd text_summarizer
+````
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Add your article in `input.txt`.
+
+4. Run the script:
+
+   ```bash
+   python summarizer.py
+   ```
+
+---
+
+## 📝 Sample Output
+
+```
+Original Text:
+Artificial Intelligence (AI) is the simulation of human intelligence processes...
+
+Summary:
+AI is the simulation of human intelligence. It helps in diagnosing diseases, fraud detection, self-driving vehicles...
+```
+
+---
+
+## 📦 Requirements
+
+* Python 3.6–3.10
+* Recommended libraries:
+
+  * `gensim==3.8.3` (only if compatible)
+  * or use `sumy` as an alternative
